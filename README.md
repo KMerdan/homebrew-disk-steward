@@ -7,11 +7,12 @@ This is the official Homebrew tap for [Disk Steward](https://github.com/KMerdan/
 The tap is public, but the cask is intentionally **disabled** until an immutable Disk Steward release asset passes Developer ID signing, notarization, stapling, Gatekeeper, and launch verification. This lets the packaging contract be inspected without distributing an unnotarized build.
 
 ```sh
+brew trust KMerdan/disk-steward
 brew tap KMerdan/disk-steward
 brew install --cask disk-steward
 ```
 
-The tap command works today. The install command stops with the explicit disabled reason. It will become installable only after the notarized release gate passes and the cask is pinned to an exact version, release URL, and SHA-256.
+Current Homebrew releases require explicit trust before loading a third-party tap. Trust the KMerdan tap only if you intend to accept its current and future casks. The tap command then works; the install command stops with the explicit disabled reason. It will become installable only after the notarized release gate passes and the cask is pinned to an exact version, release URL, and SHA-256.
 
 Release details and the activation checklist live in the [main repository](https://github.com/KMerdan/disk_steward/blob/main/Packaging/Homebrew/README.md).
 
