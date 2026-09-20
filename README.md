@@ -4,7 +4,7 @@ This is the official Homebrew tap for [Disk Steward](https://github.com/KMerdan/
 
 ## Install
 
-Disk Steward 1.0.0 is Developer ID signed, hardened, notarized, and available from this tap:
+Disk Steward 1.2.2 is Developer ID signed, hardened, notarized, and available from this tap:
 
 ```sh
 brew trust KMerdan/disk-steward
